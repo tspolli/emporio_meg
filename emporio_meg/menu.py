@@ -1,6 +1,9 @@
 import os
+import getpass
 
 class Menu():
+
+
     def menu_principal():
         print("###########################")
         print("        EMPORIO MEG        ")
@@ -15,9 +18,8 @@ class Menu():
         print("#### LOGIN ####")
         print("USUARIO: ")
         usuario = str(input())
-        print("SENHA: ")
-        senha = str(input())
-    
+        senha = getpass.getpass("SENHA: ")
+        
     def ajuda():
         os.system("cls")
         print("#### AJUDA ####")
