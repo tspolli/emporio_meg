@@ -20,7 +20,8 @@ class Menu():
         print("USUARIO: ")
         usuario = str(input())
         senha = getpass.getpass("SENHA: ")
-        
+        return usuario, senha
+
     def submenu_login():
         print("################################")
         print("      SISTEMA EMPORIO MEG       ")
